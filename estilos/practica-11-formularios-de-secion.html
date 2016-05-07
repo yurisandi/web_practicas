@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>formulario de sesion</title>
+	<script>
+		function sesion(){
+			// obtener valores de controles 
+			var formulario=
+			document.getElementById("loginform");
+			var usuario =
+			formulario.user.value;
+			var password=
+			formulario.passwd.value;
+			var recordar = 
+			formulario.remember.value;
+			
+			//imprimir valores de controles
+			document.getElementById("resultado").innerHTML = "Usuario: " + usuario + " Contraseña: " + password + " Recordar: "	+ recordar;
+		
+			
+			
+	
+	</script>
+</head>
+<body>
+    <!--form#loginform>div>(label[for=user]{usuario:}
+    +input:text[name=user id=user])^div>
+    (label[for=passwd]{contraseña:
+    }+input:password[name=passwd] id=passwd])^div>
+    (label[for=remember]>input:checkbox[name=remember
+    id=remember]{recordar contraseña})^div>a[href=#]
+    {olvidaste tu contraseña ?
+    }^div>button{registrar}+button{iniciar secion}-->
+    
+    	
+    <h1>Iniciar sesion</h1>
+    <form id="logingform" action="#" method="get">
+    <div>
+    	    <label for="user">Usuario:</label>
+    	    <input type="text" name="user" id="user">
+    	<br><br>
+    </div>
+    <div>
+    	    <label for="passwd">Contraseña:</label>
+    	     <input type="password" 
+    	     name="passwd" id="passwd">
+    	<br>
+    </div>
+    <div>
+     	    <label for="remember">
+     		 <input type="checkbox" name="remember" 
+    	     id="remember">Recordar contraseña
+     	    </label><br>
+    </div>
+    <div>
+     		<a href="#">¿olvidaste tu contraseña? </a>
+    </div><br>
+    <div>
+     		<button>Registrar</button>
+     		<button id="btnsesion">Iniciar sesion</button>
+    </div>
+     
+    	
+    </form>
+    <div id="resultado"></div>
+    <script>
+		document.getElementById("btnsesion").addEventListener("click", function(evento){
+			evento.preventDefault();
+			sesion();
+		});
+	</script>
+
+</body>
+</html>

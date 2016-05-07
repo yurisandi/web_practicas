@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>CSS Hojas de estilo en cascada documento </title>
+	<style> /*selectores de etiqueta */
+		body{
+			font-family: sans-serif ;
+			
+		}
+		p {
+			line-height: 25px;
+		}
+		/*importante en HTML se recomienda utilizar solo un ID a la vez , sin repetir*/
+		/*selectores tipo id*/
+        .articulo p {
+            font-family: cursive;
+            margin: auto;
+        
+        }
+		#subtitulo {
+		color: chartreuse ;
+			
+		}
+		
+		#maintitle {
+            /*color: fuchsia;*/
+            /*color: rgb(9,340,6870);*/
+			color: #99cc33;
+		}
+		/*selctores tipo clase*/
+		.articulo header{
+			font-family: bold;
+			font-size: 1.4em;
+			/*pt: points, px: pixels ,% :percent, em:?*/
+		
+		}
+		.contenido{
+			line-height: 1em;
+			text-aling: justify;
+		}
+		
+	</style>
+</head>
+<body>
+	<h1 id="maintitle"> CSS Hojas de estilo en cascada documento</h1>
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta expedita dignissimos ipsam, voluptates dolorem inventore fugit voluptate temporibus id similique est culpa officia possimus tenetur repellat atque, ullam? Architecto, porro.</p>
+	<h2 id="subtitulo"> Ejemplo ID </h2>
+	<section id="articulos">
+		<article class="articulo">
+		
+			<header id="titulo"> Titulo del articulo 1</header>
+			<p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim adipisci, repellendus et libero quidem obcaecati, sequi odit laboriosam asperiores minima dolorem molestias repudiandae aspernatur doloremque ratione deserunt eum excepturi.</p>
+			<button class="readmore">leer mas</button>
+			
+		</article>
+		
+		<article class="articulo">
+		
+			<header id="titulo"> Titulo del articulo 2</header>
+			<p class="contenido">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim adipisci, repellendus et libero quidem obcaecati, sequi odit laboriosam asperiores minima dolorem molestias repudiandae aspernatur doloremque ratione deserunt eum excepturi.</p>
+			<button class="readmore">leer mas</button>
+			
+		</article>
+		
+		<article class="articulo">
+		
+			<header id="titulo"> Titulo del articulo 3</header>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi enim adipisci, repellendus et libero quidem obcaecati, sequi odit laboriosam asperiores minima dolorem molestias repudiandae aspernatur doloremque ratione deserunt eum excepturi.</p>
+			<button>leer mas</button>
+			
+		</article>
+	</section>
+
+</body>
+</html>
